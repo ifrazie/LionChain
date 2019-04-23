@@ -1,0 +1,45 @@
+{
+  "name": "barakchain",
+  "version": "1.0.0",
+  "git repository": "https://github.com/digibaraka/barakchain.git",
+  "description": "A JavaScript blockchain implementation",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint dev",
+    "test": "jest",
+    "node_0": "nodemon --watch dev -e js dev/networkNode.js 3000 http://localhost:3000",
+    "node_1": "nodemon --watch dev -e js dev/networkNode.js 3001 http://localhost:3001",
+    "node_2": "nodemon --watch dev -e js dev/networkNode.js 3002 http://localhost:3002",
+    "node_3": "nodemon --watch dev -e js dev/networkNode.js 3003 http://localhost:3003",
+    "node_4": "nodemon --watch dev -e js dev/networkNode.js 3004 http://localhost:3004",
+    "node_5": "nodemon --watch dev -e js dev/networkNode.js 3005 http://localhost:3005"
+  },
+  "author": "Imamu Baraka Frazier",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-recommended": "^4.0.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "sha256": "^0.2.0",
+    "uuid": "^3.3.2"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017,
+      "sourceType": "module"
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {}
+  }
+}
